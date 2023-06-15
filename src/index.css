@@ -1,0 +1,158 @@
+/* Set default styles for the body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set font styles for code elements */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Styling for the tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-left: 45%;
+  margin-top: 20%;
+  cursor: pointer;
+}
+
+/* Styling for the tooltip text when props pass as 'top' */
+.tooltip .tooltiptext-top {
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -90%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext-top {
+  visibility: visible;
+}
+
+/* Styling for the arrow of the tooltip when props pass as 'top' */
+.tooltip .tooltiptext-top::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* Styling for the tooltip text when props pass as 'bottom' */
+.tooltip .tooltiptext-bottom {
+  visibility: hidden;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  margin-left: -90%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext-bottom {
+  visibility: visible;
+}
+
+/* Styling for the arrow of the tooltip when props pass as 'bottom' */
+.tooltip .tooltiptext-bottom::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+/* Styling for the tooltip text when props pass as 'left' */
+.tooltip .tooltiptext-left {
+  visibility: hidden;
+  margin-right: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -5px;
+  right: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext-left {
+  visibility: visible;
+}
+
+/* Styling for the arrow of the tooltip when props pass as 'left' */
+.tooltip .tooltiptext-left::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+/* Styling for the tooltip text when props pass as 'right' */
+.tooltip .tooltiptext-right {
+  visibility: hidden;
+  margin-left: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -5px;
+  left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext-right {
+  visibility: visible;
+}
+
+/* Styling for the arrow of the tooltip when props pass as 'right' */
+.tooltip .tooltiptext-right::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
