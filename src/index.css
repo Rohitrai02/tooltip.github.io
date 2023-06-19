@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 /* Set font styles for code elements */
@@ -16,11 +17,12 @@ code {
 
 /* Styling for the tooltip container */
 .tooltip {
+  font-size: 1.2rem;
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
   margin-left: 45%;
-  margin-top: 20%;
+  margin-top: 10%;
   cursor: pointer;
 }
 
@@ -155,4 +157,34 @@ code {
   border-width: 5px;
   border-style: solid;
   border-color: transparent black transparent transparent;
+}
+
+.btn{
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  /* margin-top: 5%; */
+  cursor: pointer;
+  
+}
+
+.btn span{
+  font-size: 2rem;
+  margin-right: 20px;
+  font-weight: 600;
+}
+button{
+  margin: 10px;
+  background: red;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover{
+  background: blue;
 }
